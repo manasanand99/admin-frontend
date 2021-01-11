@@ -1,0 +1,19 @@
+
+<p>view-all-claims works!</p>
+<table >
+    <tr>
+        <th>claim id</th>
+        <th>claim date</th>
+        <th>claim reason</th>
+        <th>claim amount</th>
+        <th>claim policyId</th>
+    </tr>
+    <tr *ngFor="let claim of claims">
+        <td>{{claim.claimId}}</td>
+        <td>{{claim.claimDate}}</td>
+        <td>{{claim.reason}}</td>
+        <td>{{claim.amount}}</td>
+        <td>{{claim.policyId}}</td>
+        <td><button (click)="viewData(claim)" >view Data</button></td>
+    </tr>
+</table>

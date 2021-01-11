@@ -1,0 +1,14 @@
+<p>set-claim works!</p>
+<button (click)="viewAllData()">fetch</button>
+<table *ngIf=display>
+    
+    <tr><td>{{fetchPolicy|json}}</td></tr>
+    <tr><td>{{fetchVehicle|json}}</td></tr>
+    <tr><td>{{fetchClaim|json}}</td></tr>
+    <tr><td>{{claim.amount}}</td></tr>
+    <label>Set Amount :</label>
+    <input type="number" name="amount" [(ngModel)]=claim.amount/>
+    <button (click)="claimApprove()" [routerLink]="'/dashBoard'">approve</button> 
+    <button (click)="claimDecline()" [routerLink]="'/dashBoard'">disapprove</button>
+    <button [routerLink]="'/homeLink'">back</button>
+</table>

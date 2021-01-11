@@ -1,0 +1,48 @@
+*{
+    box-sizing: border-box;
+    font-family:  'Muli', 'Baloo Da 2', 'Montserrat', sans-serif ;
+    text-align: center;
+}
+body{
+    font-family: Arial;
+    padding: 10px 250px;
+    background: #f1f1f1;
+}
+
+.details{
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+    overflow: hidden;
+}
+.container {
+    padding: 16px;
+    width: 350px;
+    margin: auto;
+}
+
+.header{
+    text-align: center;
+    background-color: red;
+    color:white;
+}
+.cancel-box{
+    background-color:#f1f1f1;
+}
+button {
+    background-color: darkblue;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+input[type=text], input[type=password], input[type=email], input[type=tel] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}

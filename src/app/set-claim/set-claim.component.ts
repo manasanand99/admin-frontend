@@ -22,6 +22,7 @@ export class SetClaimComponent implements OnInit {
   display:boolean=false;
   num:number=0;
   claim=new Claim();
+
   ngOnInit(): void {
     this.claim.claimId=parseInt(sessionStorage.getItem('claimId')!);
     this.claim.claimDate=sessionStorage.getItem('claimDate')!;

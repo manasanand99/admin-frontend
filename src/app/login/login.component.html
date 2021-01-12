@@ -1,19 +1,30 @@
-<div class="header"><h1>welcome admin</h1></div>
-    
-    <div class="details">
+<p>login works!</p>
+<div >
+    <div class="card">
+      <h2 style="text-align: center">Login to a world of opportunities!</h2>
+      <!--<form onsubmit="validate();">-->
+      <form #loginForm="ngForm" (ngSubmit)="checkLogin()">
         <div class="container">
-            <h2>Enter the details to Login</h2>
-        <form>
-            <label for="adminName">Name</label><br>
-            <input type="text" name="adminName" placeholder="enter admin name"><br>
-            <label for="adminPass">Password</label><br>
-            <input type="text" name="adminPass" placeholder="enter password" > <br>
-            <button type="submit">Login</button>
-            <input name="chck" type="checkbox" >
-            <label for="chck">Remember me</label><br>
-            <div class="cancel-box" style="padding: 10px">
-                <a href="#">forgot password</a>
-            </div>
-        </form>
-        </div>        
+          <label for="uname"><b>Username</b></label>
+          <input  type="text"  placeholder="Enter Username"  name="uname"  required [(ngModel)]="userName"   /><br />
+          <label for="psw"><b>Password</b></label>
+          <input  type="password"  placeholder="Enter Password"  name="psw"  required [(ngModel)]="pass" /><br />
+          <span id="mbError" style="color: red"></span>
+
+          <button type="submit">Login</button>
+
+          <input type="checkbox" name="remb" />
+          <label for="remb">Remember me</label> 
+        </div>
+        <div class="container" style="background-color: #f1f1f1;">
+          <span class="psw">Forgot <a href="#">password?</a></span>
+      </div>
+        <!-- <div class="bottom">
+             <label for="cancel"><b>Cancel</b></label> 
+           
+              <button type="reset" style="background-color: red; width: 25%;">cancel</button>
+              <p style="float: right;padding-right: 20px;">forgot <a href="login.html">password</a></p>
+        </div> -->
+      </form>
     </div>
+  </div>

@@ -1,0 +1,51 @@
+*{
+    box-sizing: border-box;/*  it will be a box and content will be adjusted*/
+    font-family:  'Muli', 'Baloo Da 2', 'Montserrat', sans-serif ;
+}
+.topnav{
+    overflow: hidden;/* controls what happens to content that is to big to fit*/
+    background-color: rgb(47, 47, 240);
+    margin: auto;
+}
+.topnav ul{
+    list-style-type: none;
+}
+.topnav a{
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;/*remove underline*/
+    letter-spacing: 1px;
+    height: 70px;
+}
+.footer{
+    /* position: fixed; */
+    bottom: 0;
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+    margin-top: 20px;
+    width: 100%;
+    margin: auto;
+}
+.main{
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+}
+
+/* .main{
+    padding-left: 50;
+    position: fixed;
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    background-color: red;
+} */
+.card{
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+    overflow: hidden;
+}

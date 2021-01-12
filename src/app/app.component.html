@@ -1,9 +1,29 @@
-<h2>this app</h2>
-<!-- <app-home></app-home> -->
-<!-- <app-login></app-login> -->
+<!-- <h2>this app</h2>
+ <app-home></app-home>
+ <app-login></app-login> 
 <a [routerLink]= "['/claimLink']" > setclaim</a><br>
 <a [routerLink]="['/homeLink']">home</a><br>
 <a [routerLink]="['/viewClaims']">claims</a>
 
 <div>    <router-outlet></router-outlet>  </div>
-<h1>end of app</h1>
+<h1>end of app</h1> -->
+<div class="topnav">
+<ul>
+    <li><a [routerLink]="['/homeLink']">home</a></li>
+    <li><a [routerLink]="['/viewClaims']">claims</a></li>
+    <li><a [routerLink]="['/login']"  >Login</a></li>
+    <li>
+      <img
+        src=""
+        alt="logo"
+        style="float: right; padding-right: 20px; height: 50px"
+      />
+    </li>
+  </ul>
+</div>
+<div class="main">
+  <router-outlet></router-outlet>
+</div>
+<div class="footer">
+  <p>© 2020 Larsen & toubro Infotech Limited</p>
+</div>

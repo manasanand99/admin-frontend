@@ -11,6 +11,7 @@ import { ClaimService } from './claim.service';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { ViewAllClaimsComponent } from './view-all-claims/view-all-claims.component';
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,7 @@ import { ViewAllClaimsComponent } from './view-all-claims/view-all-claims.compon
     DashBoardComponent,
     SetClaimComponent,
     ViewAllClaimsComponent,
-    
+    HeaderComponent
   ],
   imports: [
     BrowserModule,

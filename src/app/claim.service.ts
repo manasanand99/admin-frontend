@@ -2,6 +2,7 @@ import { Injectable, OnInit } from "@angular/core";
 import { Observable } from "rxjs";
 import {HttpClient} from "@angular/common/http"
 import { Claim } from "./Claim";
+import { AdminLogin } from "./adminLogin";
 @Injectable({
     providedIn:'root'
 })
@@ -24,10 +25,12 @@ export class ClaimService {
         return this.http.get("http://localhost:8080/plan/"+num);
     }
     getClaim(num:number):Observable<any>{
-        return this.http.get("http://localhost:8080/claim"+num);
+        return this.http.get("http://localhost:8080/claim/"+num);
     }
     getAllClaims():Observable<any>{
         return this.http.get("http://localhost:8080/viewClaims");
     }
-
+    loginUser(admin:AdminLogin):Observable<any>{
+        return this.http.post("http://localhost:8080/adminLogin",admin);
+    }
 }
